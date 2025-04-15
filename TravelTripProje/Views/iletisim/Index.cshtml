@@ -1,0 +1,41 @@
+﻿@using TravelTripProje.Models.Sınıflar
+@model  List<iletisim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+
+    <div class="wrap">
+        <div class="contact-top">
+            <h3>İletişim Bilgileri</h3>
+            <form method="post">
+                <input type="hidden" placeholder="ID" name="ID" required />
+                <input type="text" placeholder="AdSoyad" name="AdSoyad" required />
+                <input type="text" placeholder="Mail" name="Mail" required />
+                <input type="text" placeholder="Konu" name="Konu" required />
+                <textarea placeholder="Mesaj" name="Mesaj"></textarea>
+                <input type="submit" value="Gönder" />
+            </form>
+            
+              
+        <div class="clear"></div>
+        <div class="contact-bottom">
+            <div class="contact-left">
+                <div class="contact-add">
+                    <h3>Adres</h3>
+                    <p>Seyrantepe mah. Cendere Caddesi No:56 34418 Kağıthane/İstanbul</p>
+                    <p>Telefon:+90 123 456 78 90</p>
+                    <p>Email:<a href="aozturk@isbak.com.tr">aozturk@isbak.com.tr</a></p>
+                </div>
+
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.5913816296297!2d28.98092167518884!3d41.09496471408399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab69090cccc57%3A0xe95406e7d66749f4!2zxLBzdGFuYnVsIEJpbGnFn2ltIFZlIEFrxLFsbMSxIEtlbnQgVGVrbm9sb2ppbGVyaSBBxZ4!5e1!3m2!1str!2str!4v1744748095764!5m2!1str!2str" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
